@@ -220,3 +220,30 @@ hr {
         gap: 30px;
     }
 }
+
+@media screen and (min-width: 669px) and (max-width:992px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .players,
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 10px;
+    }
+    .blogs{
+        
+        justify-items: start;
+
+    }
+    .player {
+        align-items: center;
+    }
+    .player,
+    .blog{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
